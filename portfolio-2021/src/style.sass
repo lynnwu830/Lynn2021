@@ -1,0 +1,296 @@
+// 色彩規劃
+$color_main: #F6BD42
+$color_secondary: #FCD768
+//--------------------------
+
+@mixin ab_center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+  
+@mixin size($w,$h)
+  width: $w
+  height: $h
+
+// @mixin before
+//   content: " "
+//   display: block
+//   position: absolute
+//   top: 35%
+//   left: -1px
+//   width: 0px
+//   height: 18px
+//   opacity: 1
+//   z-index: -1
+//   background-color: white
+//   transition-duration: 0.3s
+//   transform: rotate(2deg)
+
+
+
+*
+  font-family: 'Prata', serif, 'Roboto', sans-serif
+  font-weight: regular
+  letter-spacing: 1px
+  color: #000000
+
+  // border: solid 1px #666
+  box-sizing: border-box
+  position: relative
+  // debug
+  // header
+  //   display: none
+  // section
+  //   display: none
+  // section#section_future
+  //   display: block
+  
+body,html
+  margin: 0px
+  padding: 0px
+  width: 100%
+  // height: 2000px
+  // &::-webkit-scrollbar
+  // overflow: visible !important
+  // display: none
+  
+
+.home
+  width: 100%
+  height: 100%
+  overflow-x: hidden
+  
+  .bg
+    // background-image: url(https://upload.cc/i1/2021/07/30/Qmv0hF.png)
+    width: 100%
+    min-width: 600px
+    // height: 100%
+    background-size: cover
+    // background-position: right 10% bottom 20%
+    position: fixed
+    right: -10%
+    
+  .container#home_sectiom
+    position: relative
+    top: 10%
+    font-size: 0px
+    
+    .block
+      display: inline-block
+      font-size: initial
+      
+    .left
+      width: 30%
+      padding: 16px
+      // margin-top: 100px
+      // margin-bottom: 24px
+      top: 40%
+      position: fixed
+      z-index: 2
+      
+      h1, p, btn
+        padding: 10px
+      p
+        font-family: 'Roboto', sans-serif
+        
+        
+    .right
+      width: 55%
+      top: 150px
+      position: absolute
+      right: 0px
+      padding: 16px
+      .work
+        // +size(100%,400px)
+         width: 100%    
+        height: auto
+        aspect-ratio: 4/3
+        border-radius: 10px
+        margin-bottom: 56px
+        background-color: #aaa
+
+
+      .card1
+        background-image: url(../pic/colorchips_1.jpg)
+        background-size: cover
+
+        // .hover
+        //   border-radius: 30px
+
+    
+  
+    
+@media screen and (max-width: 900px)
+  .container#home_sectiom
+    .block.left
+      width: 65%
+      padding: 16px
+      margin-top: 56px
+      margin-bottom: 24px
+      position: absolute
+      
+    .block.right
+      padding: 24px
+      width: 100%
+      top: 350px
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      
+      .work
+        // +size(100%,300px)
+        width: 100%    
+        height: auto
+        aspect-ratio: 4/3
+        border-radius: 10px
+        margin-bottom: 56px
+        background-color: #333
+        
+@media screen and (max-width: 550px)
+  .container#home_sectiom
+    .block.left
+      width: 80%
+      padding: 16px
+      margin-top: 56px
+      margin-bottom: 72px
+      position: absolute
+      
+    .block.right
+      padding: 24px
+      width: 100%
+      top: 350px
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      
+      .work
+        // +size(100%,300px)
+        width: 100%    
+        height: auto
+        aspect-ratio: 4/3
+        border-radius: 10px
+        margin-bottom: 56px
+        background-color: #666
+
+  
+// .fixed_center
+//   position: fixed
+//   left: 50%
+//   top: 50%
+//   transform: translate(-50%,-50%)
+//   overflow: hidden
+  
+// section
+//   padding: 0
+  
+
+// .container.section#section_homepage
+//   position: fixed
+//   width: 100vw
+//   height: 100vh
+//   // margin: 20px 
+//   background-color: white
+//   border: solid 55px white
+//   box-sizing: border-box
+  
+
+
+
+// .row
+//   height: 100%
+    
+// .col-md-8.left
+//   background-color: white
+//   height: 100%
+//   position: relative
+//   .aniface
+//     display: flex
+//     justify-content: center
+//     top: 15%
+//     transform: translateX(-20px)
+    
+//   .face
+//     width: 45%
+//     max-width: 400px
+//     animation: face_in 0.5s ease-in-out
+//     transform: rotate(7deg)
+//     .pupil
+//       position: relative
+//       animation: eyeball 10s infinite ease-in-out
+//     .pupil2
+//       position: relative
+//       animation: eyeball 10s infinite ease-in-out
+      
+        
+    
+// .col-md-4.right
+//   background-color: white
+//   height: 100%
+
+  
+// .socialmedia
+//   display: flex
+//   flex-direction: column
+//   width: 20px
+//   text-align: center
+//   font-size: 15px
+//   position: fixed
+//   right: 20px
+//   top: 50%
+//   transform: translateY(-50%)
+//   a.i
+//     padding: 5px 0px
+//     color: #000000
+//     text-decoration: none
+
+// #Section.SectionWorks.fixed_center
+//   color: white  
+//   z-index: 0
+//   top: 45%
+//   transform: teanslateX(50%)
+//   .title2
+//     margin-top: 80px 
+//     position: relative
+//     &:hover
+//       font-size: 350%
+//       color: $color_yellow
+//     &:hover::before
+//       top: 35%
+//       left: -1px
+//       width: 300px
+//       height: 18px
+//       opacity: 0
+//       z-index: -1
+//       background-color: $color_yellow
+//       transition-duration: 0.8s
+//     &::after
+//       content: attr(info)
+//       display: block
+//       position: absolute
+//       font-size: 25px
+//       font-weight: 100
+//       opacity: 0
+//       top: -20px
+//       transition-duration: 0.5s
+//     &:hover::after
+//       opacity: 0.9
+//       transform: translateY(68px) translateX(20px) rotate(1deg)
+//       transition-duration: 0.5s
+//       color: white
+
+  
+@keyframes scrolldown
+  0%
+    transform: translateX(-140px)
+    opacity: 0.5
+  45%
+    opacity: 1
+    transform: translateX(-30px)
+  80%
+    opacity: 1
+    transform: translateX(-30px)
+  100%
+    opacity: 0.5
+    transform: translateX(-140px)
+  

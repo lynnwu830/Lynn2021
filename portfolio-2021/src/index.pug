@@ -1,0 +1,55 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title CodePen - portfolio 2021
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&family=Noto+Sans+TC:wght@100;400;700;900&family=Squada+One&display=swap')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Notable&display=swap')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Gidugu&family=Notable&display=swap')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Prata&family=Roboto:wght@100;300;400;500&display=swap')
+    link(rel='stylesheet' href='./style.css')
+  body
+    // partial:index.partial.html
+    nav.navbar.navbar-default.navbar-fixed-top.at_top
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#navbar' aria-expanded='false' aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#header_index') LYNN WU
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#section_about') HOME +
+            li.active
+              a(href='#section_works') WORKS +
+            li
+              a(href='#section_contact') ABOUT +
+            li
+              a(href='#section_contact') PHOTOGRAPHY +
+        // /.nav-collapse
+    .home
+      img.bg(src='https://upload.cc/i1/2021/07/30/Qmv0hF.png')
+      #home_sectiom.container
+        .block.left
+          h1 Hi ! I’m Lynn Wu 
+          p
+            | I’m a UI UX designer based in Taipei, Taiwan focusing on interface design and interaction design. Obsessed with phtography and food traveling.
+          .btn More about Me 
+        .block.right
+          .work.card1
+          .work.card2
+          .work.card3
+          .work.card4
+
+    // partial
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js')
+    script(src='./script.js')
